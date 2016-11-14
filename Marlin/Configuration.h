@@ -285,9 +285,13 @@
   #define K1 0.95 //smoothing factor within the PID
   #define PID_dT ((OVERSAMPLENR * 10.0)/(F_CPU / 64.0 / 256.0)) //sampling period of the temperature routine
 
-    #define  DEFAULT_Kp 39.54
-    #define  DEFAULT_Ki 4.43
-    #define  DEFAULT_Kd 88.26
+//    #define  DEFAULT_Kp 39.54
+//    #define  DEFAULT_Ki 4.43
+//    #define  DEFAULT_Kd 88.26
+
+    #define  DEFAULT_Kp 18.10
+    #define  DEFAULT_Ki 0.89
+    #define  DEFAULT_Kd 92.37
     
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Ultimaker
@@ -319,7 +323,7 @@
 // If your configuration is significantly different than this and you don't understand the issues involved, you probably
 // shouldn't use bed PID until someone else verifies your hardware works.
 // If this is enabled, find your own PID constants below.
-//#define PIDTEMPBED
+#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
